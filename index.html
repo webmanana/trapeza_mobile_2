@@ -1,0 +1,451 @@
+<!doctype html>
+<html class="no-js" lang="ru" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Трапеза</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
+	<link rel="stylesheet" href="vendor/foundation/css/app.css">
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="header_wrap">
+				<div class="top_mobile_inner">
+					<a class="burger" data-toggle="offCanvas" href="#"><img src="img/burger.png" alt=""></a>
+					<div class="top_mobile_content">
+						<div class="header_log">
+							<a href="#" class="header_login">
+								<div class="header_login_img">
+									<img src="img/login.png" alt="">
+								</div>
+								<span>Вход</span>
+							</a>
+							<span>|</span>
+							<a href="#" class="header_reg">
+								<span>Регистрация</span>
+							</a>
+						</div>
+						<div class="header_cart_mobile">
+							<a href="#">
+								<div class="header_cart_img">
+									<img src="img/cart.png" alt="">
+								</div>
+								<span>0</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="container header_center">
+					<div class="top_header_inner">
+						<div class="logo">
+							<a href="#"><img src="img/logo.png" alt="Окна"></a>
+						</div>
+						<div class="header_info">
+							<div class="header_info_toggle" data-toggle="header_dropdown">
+								<span>+ 7 (4112) 24-16-16</span>
+								<p>г. Якутск, ул. Дзержинского 52/2, оф. 19</p>
+							</div>
+							<div class="dropdown-pane" id="header_dropdown" data-dropdown data-hover="true" data-hover-pane="true">
+								<ul class="header_dropdown_panel">
+									<li>
+										<span class="red">Главный магазин:</span> ТВЦ “Тамара”
+										ул. Дзержинского 52/2, оф. 19
+										+ 7 (4112) 24-16-16
+									</li>
+									<li>
+										<span class="red">Магазин:</span> Жорницкого 33/1, пав. 107А + 7 (4112) 71-33-92
+									</li>
+									<li>
+										<span class="red">Склад:</span> ул. Степанова, 12 + 7 (4112) 25-61-61
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header_search">
+							<form class="search_block" action="">
+								<input class="search_area" type="text" name="q" value="" autocomplete="off" placeholder="Поиск по каталогу">
+								<input type="submit" name="" value="">
+							</form>
+						</div>
+						<div class="header_control">
+							<div class="header_log">
+								<a href="#" class="header_login" data-open="exampleModal1">
+									<div class="header_login_img">
+										<img src="img/login.png" alt="">
+									</div>
+									<span>Вход</span>
+								</a>
+								<span>|</span>
+								<a href="#" class="header_reg">
+									<span>Регистрация</span>
+								</a>
+							</div>
+							<div class="header_cart">
+								<a href="#">
+									<div class="header_cart_img">
+										<img src="img/cart.png" alt="">
+									</div>
+									<span>Корзина (0)</span>
+								</a>
+							</div>
+						</div>
+					</div><!--top header end-->
+					<div class="reveal header_modal" id="exampleModal1" data-reveal>
+						<div class="header_modal_content">
+							<span>Вход в систему</span>
+							<input class="header_modal_mail" type="text" name="mail" value="" placeholder="E-Mail">
+							<input class="header_modal_pass" type="text" name="password" value="" placeholder="Пароль">
+							<a href="#" class="header_modal_why">Забыли пароль</a>
+							<input class="header_modal_submit" type="submit" name="login" value="Войти">
+							<a href="#" class="header_modal_reg">Регистрация</a>
+						</div>
+						<button class="close-button" data-close aria-label="Close modal" type="button">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="bottom_header_inner">
+						<div class="header_menu_inner">
+							<ul>
+								<li>
+									<a href="#" class="header_menu_dropdown_1" data-toggle="header_catalog_menu">
+										<div class="header_menu_dropdown_burger">
+											<img src="img/catalog_burger.png" alt="">
+										</div>
+										Каталог товаров
+									</a>
+								</li>
+								<li><a href="#" class="header_menu_dropdown_2" data-toggle="header_catalog_menu_2">Услуги</a></li>
+								<li><a href="#">Оплата и доставка</a></li>
+								<li><a href="#">Информация</a></li>
+								<li><a href="#">Работы</a></li>
+								<li><a href="#">Партнёры</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="dropdown-pane" id="header_catalog_menu" data-dropdown data-hover="true" data-hover-pane="true">
+							<ul class="header_catalog_menu_panel vertical dropdown menu" data-dropdown-menu >
+								<li>
+									<a href="#" class="sub_menu">Окна из ПВХ</a>
+									<ul class="sub_menu">
+										<li>
+											<a href="#">123</a>
+											<ul class="sub_menu">
+												<li>
+													<a href="#">123</a>
+												</li>
+												<li><a href="#">321</a></li>
+												<li><a href="#">321</a></li>
+											</ul>
+										</li>
+										<li><a href="#">321</a></li>
+										<li><a href="#">321</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="sub_menu">Двери из ПВХ</a>
+								</li>
+								<li>
+									<a href="#">Алюминиевый профиль</a>
+									<ul>
+										<li>
+											<a href="#" class="sub_menu">Окна и двери</a>
+											<ul>
+												<li><a href="#">Изготовление окон и дверей</a></li>
+												<li><a href="#">Установка окон и дверей</a></li>
+												<li><a href="#">Установка откосов и подоконников</a></li>
+												<li><a href="#">Установка сеток</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Перегородки</a></li>
+										<li><a href="#">Ремонт</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="sub_menu">Пластиковые откосы, подоконники</a>
+								</li>
+								<li>
+									<a href="#" class="sub_menu">Монтажные товары</a>
+								</li>
+								<li>
+									<a href="#" class="sub_menu">Комплектующие</a>
+								</li>
+								<li>
+									<a href="#" class="sub_menu">Стекло</a>
+								</li>
+							</ul>
+						</div>
+						<div class="dropdown-pane" id="header_catalog_menu_2" data-dropdown data-hover="true" data-hover-pane="true">
+							<ul class="header_catalog_menu_panel vertical dropdown menu" data-dropdown-menu >
+								<li>
+									<a href="#" class="sub_menu">Окна из ПВХ</a>
+									<ul class="sub_menu">
+										<li>
+											<a href="#">123</a>
+											<ul class="sub_menu">
+												<li>
+													<a href="#">123</a>
+												</li>
+												<li><a href="#">321</a></li>
+												<li><a href="#">321</a></li>
+											</ul>
+										</li>
+										<li><a href="#">321</a></li>
+										<li><a href="#">321</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="sub_menu">Двери из ПВХ</a>
+								</li>
+								<li>
+									<a href="#">Алюминиевый профиль</a>
+									<ul>
+										<li>
+											<a href="#" class="sub_menu">Окна и двери</a>
+											<ul>
+												<li><a href="#">Изготовление окон и дверей</a></li>
+												<li><a href="#">Установка окон и дверей</a></li>
+												<li><a href="#">Установка откосов и подоконников</a></li>
+												<li><a href="#">Установка сеток</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Перегородки</a></li>
+										<li><a href="#">Ремонт</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="sub_menu">Пластиковые откосы, подоконники</a>
+								</li>
+								<li>
+									<a href="#" class="sub_menu">Монтажные товары</a>
+								</li>
+								<li>
+									<a href="#" class="sub_menu">Комплектующие</a>
+								</li>
+								<li>
+									<a href="#" class="sub_menu">Стекло</a>
+								</li>
+							</ul>
+						</div>
+					</div><!--bottom header end-->
+				</div>
+				<div class="bottom_header_mobile">
+					<div class="header_mobile_menu">
+						<ul>
+							<li>
+								<a href="#" class="header_menu_dropdown_1" data-toggle="mobile_menu_1">
+									<div class="header_menu_dropdown_burger">
+										<img src="img/catalog_burger.png" alt="">
+									</div>
+									Каталог товаров
+								</a>
+							</li>
+							<li><a href="#" class="header_menu_dropdown_2" data-toggle="mobile_menu_2">Услуги</a></li>
+						</ul>
+					</div>
+					<div class="dropdown-pane mobile_menu_inner" id="mobile_menu_1" data-dropdown data-auto-focus="true">
+						<div class="mobile_menu_content">
+							<ul class="vertical menu drilldown" data-drilldown>
+								<li>
+									<a href="#">Окна из ПВХ</a>
+									<ul class="menu vertical nested">
+										<li>
+											<a href="#">Two A</a>
+											<ul class="menu vertical nested">
+												<li><a href="#">Two A</a></li>
+												<li><a href="#">Two B</a></li>
+												<li><a href="#">Two C</a></li>
+												<li><a href="#">Two D</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Двери из ПВХ</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Алюминиевый профиль</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Пластиковые откосы, подоконники</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Монтажные товары</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Комплектующие</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Стекло</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown-pane mobile_menu_inner" id="mobile_menu_2" data-dropdown data-auto-focus="true">
+						<div class="mobile_menu_content">
+							<ul class="vertical menu drilldown" data-drilldown>
+								<li>
+									<a href="#">Окна и двери</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Перегородки</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Ремонт</a>
+									<ul class="menu vertical nested">
+										<li><a href="#">Two A</a></li>
+										<li><a href="#">Two B</a></li>
+										<li><a href="#">Two C</a></li>
+										<li><a href="#">Two D</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="slide">
+			<div class="main_slide">
+				<div class="slider_inner slick-initialized">
+					<a href="#" class="slider_arrow arrow_left"><img src="img/slider_arrow_left.png" alt=""></a>
+					<div class="slider_content">
+						<div class="slide">
+							<img src="img/slide1.png" alt="">
+							<div class="slide_container">
+								<div class="slide_text">
+									<h2>Изготовление, установка и ремонт пластиковых окон и дверей в Якутске</h2>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<img src="img/slide1.png" alt="">
+						</div>
+						<div class="slide">
+							<img src="img/slide1.png" alt="">
+						</div>
+						<div class="slide">
+							<img src="img/slide1.png" alt="">
+						</div>
+						<div class="slide">
+							<img src="img/slide1.png" alt="">
+						</div>
+					</div>
+					<a href="#" class="slider_arrow arrow_right"><img src="img/slider_arrow_right.png" alt=""></a>
+				</div>
+			</div>
+		</section>
+		<footer class="footer_wrap">
+			<div class="container">
+
+			</div>
+		</footer>
+		<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+			<ul class="vertical menu">
+				<li>
+					<a href="#" data-toggle="offCanvas"><img src="img/close.png" alt=""></a>
+					<a href="tel:+74112241616">+ 7 (4112) 24-16-16</a>
+				</li>
+				<li><a href="#" class="active">Каталог товаров</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Оплата и доставка</a></li>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Работы</a></li>
+				<li><a href="#">Партнёры</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<script src="vendor/foundation/js/vendor/jquery.js"></script>
+		<script src="vendor/foundation/js/vendor/what-input.js"></script>
+		<script src="vendor/foundation/js/vendor/foundation.js"></script>
+		<script src="vendor/foundation/js/app.js"></script>
+		<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+		<script src="vendor/jquery.maskedinput.js"></script>
+		<script type="text/javascript">
+		$('.slider_content').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			centerMode: true,
+			focusOnSelect: true,
+			arrows: false,
+			dots: true,
+			responsive: [
+		    {
+		      breakpoint: 568,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+				dots: false,
+				arrows: true,
+				prevArrow: $('.arrow_left'),
+				nextArrow: $('.arrow_right'),
+		      }
+		    }
+		  ]
+	  	});
+		$("#offCanvasLeft").foundation("open", $("#offCanvasLeft"));
+	    jQuery(function($){
+		 $("#phone").mask("+7 (999) 999-9999");
+		});
+		</script>
+	</div>
+</body>
+
+</html>
