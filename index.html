@@ -4,9 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
 	<title>Трапеза</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
 	<link rel="stylesheet" href="vendor/foundation/css/app.css">
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
@@ -18,7 +17,7 @@
 	<div class="wrapper">
 		<div class="header_wrap">
 			<div class="header_burger">
-				<a href="#" class="waves_effect"><img src="img/burger.svg" alt=""></a>
+				<a href="#" class="waves_effect" data-toggle="offCanvas"><img src="img/burger.svg" alt=""></a>
 			</div>
 			<div class="header_title">
 				<h1>Трапеза Пицца</h1>
@@ -31,6 +30,7 @@
 					<span>2</span>
 				</a>
 			</div>
+			<div class="notify"><span id="notifyType" class=""></span></div>
 		</div>
 		<div class="slide_wrape">
 			<a href="#" class="slide_arrow arrow_left"><img src="img/left_arrow.svg" alt=""></a>
@@ -47,17 +47,10 @@
 			</div>
 			<a href="#" class="slide_arrow arrow_right"><img src="img/right_arrow.svg" alt=""></a>
 		</div>
-		<div class="menu_dots">
-			<ul>
-				<li><a href="#">Пицца</a></li>
-				<li><a href="#">Пироги</a></li>
-				<li><a href="#">Роллы</a></li>
-				<li><a href="#">Напитки</a></li>
-			</ul>
-		</div>
+
 		<div class="menu_wrap">
 			<div class="menu_slide">
-				<div class="menu_content">
+				<div class="menu_content" title="Пицца">
 					<div class="menu_block">
 						<div class="menu_img">
 							<img src="img/menu_no.png" alt="">
@@ -66,7 +59,7 @@
 							<h3>Пирог с сыром и зеленью</h3>
 							<span>Пирог с сыром и зеленью</span>
 							<div class="menu_price">
-								<a href="#">В корзину</a>
+								<a href="#" class="waves_effect buy">В корзину</a>
 								<span>500 Р</span>
 							</div>
 						</div>
@@ -79,13 +72,65 @@
 							<h3>Пирог с беконом и яйцом</h3>
 							<span>Бекон, яйцо, зеленый лук</span>
 							<div class="menu_price">
-								<a href="#">В корзину</a>
+								<a href="#" class="waves_effect buy">В корзину</a>
+								<span>650 Р</span>
+							</div>
+						</div>
+					</div>
+					<div class="menu_block">
+						<div class="menu_img">
+							<img src="img/menu_no.png" alt="">
+						</div>
+						<div class="menu_desc">
+							<h3>Пирог с сыром и зеленью</h3>
+							<span>Пирог с сыром и зеленью</span>
+							<div class="menu_price">
+								<a href="#" class="waves_effect buy">В корзину</a>
+								<span>500 Р</span>
+							</div>
+						</div>
+					</div>
+					<div class="menu_block">
+						<div class="menu_img">
+							<img src="img/menu_no.png" alt="">
+						</div>
+						<div class="menu_desc">
+							<h3>Пирог с беконом и яйцом</h3>
+							<span>Бекон, яйцо, зеленый лук</span>
+							<div class="menu_price">
+								<a href="#" class="waves_effect buy">В корзину</a>
+								<span>650 Р</span>
+							</div>
+						</div>
+					</div>
+					<div class="menu_block">
+						<div class="menu_img">
+							<img src="img/menu_no.png" alt="">
+						</div>
+						<div class="menu_desc">
+							<h3>Пирог с сыром и зеленью</h3>
+							<span>Пирог с сыром и зеленью</span>
+							<div class="menu_price">
+								<a href="#" class="waves_effect buy">В корзину</a>
+								<span>500 Р</span>
+							</div>
+						</div>
+					</div>
+					<div class="menu_block">
+						<div class="menu_img">
+							<img src="img/menu_no.png" alt="">
+						</div>
+						<div class="menu_desc">
+							<h3>Пирог с беконом и яйцом</h3>
+							<span>Бекон, яйцо, зеленый лук</span>
+							<div class="menu_price">
+								<a href="#" class="waves_effect buy">В корзину</a>
 								<span>650 Р</span>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="menu_content">
+				<div class="menu_content" title="Пироги">
 					<div class="menu_block">
 						<div class="menu_img">
 							<img src="img/menu_no.png" alt="">
@@ -94,7 +139,7 @@
 							<h3>Пирог с сыром и зеленью</h3>
 							<span>Пирог с сыром и зеленью</span>
 							<div class="menu_price">
-								<a href="#">В корзину</a>
+								<a href="#" class="waves_effect buy">В корзину</a>
 								<span>500 Р</span>
 							</div>
 						</div>
@@ -107,7 +152,63 @@
 							<h3>Пирог с беконом и яйцом</h3>
 							<span>Бекон, яйцо, зеленый лук</span>
 							<div class="menu_price">
-								<a href="#">В корзину</a>
+								<a href="#" class="waves_effect buy">В корзину</a>
+								<span>650 Р</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu_content" title="Роллы">
+					<div class="menu_block">
+						<div class="menu_img">
+							<img src="img/menu_no.png" alt="">
+						</div>
+						<div class="menu_desc">
+							<h3>Пирог с сыром и зеленью</h3>
+							<span>Пирог с сыром и зеленью</span>
+							<div class="menu_price">
+								<a href="#" class="waves_effect buy">В корзину</a>
+								<span>500 Р</span>
+							</div>
+						</div>
+					</div>
+					<div class="menu_block">
+						<div class="menu_img">
+							<img src="img/menu_no.png" alt="">
+						</div>
+						<div class="menu_desc">
+							<h3>Пирог с беконом и яйцом</h3>
+							<span>Бекон, яйцо, зеленый лук</span>
+							<div class="menu_price">
+								<a href="#" class="waves_effect buy">В корзину</a>
+								<span>650 Р</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu_content" title="Напитки">
+					<div class="menu_block">
+						<div class="menu_img">
+							<img src="img/menu_no.png" alt="">
+						</div>
+						<div class="menu_desc">
+							<h3>Пирог с сыром и зеленью</h3>
+							<span>Пирог с сыром и зеленью</span>
+							<div class="menu_price">
+								<a href="#" class="waves_effect buy">В корзину</a>
+								<span>500 Р</span>
+							</div>
+						</div>
+					</div>
+					<div class="menu_block">
+						<div class="menu_img">
+							<img src="img/menu_no.png" alt="">
+						</div>
+						<div class="menu_desc">
+							<h3>Пирог с беконом и яйцом</h3>
+							<span>Бекон, яйцо, зеленый лук</span>
+							<div class="menu_price">
+								<a href="#" class="waves_effect buy">В корзину</a>
 								<span>650 Р</span>
 							</div>
 						</div>
@@ -115,20 +216,21 @@
 				</div>
 			</div>
 		</div>
-		<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-			<ul class="vertical menu">
-				<li>
-					<a href="#" data-toggle="offCanvas"><img src="img/close.png" alt=""></a>
-					<a href="tel:+74112241616">+ 7 (4112) 24-16-16</a>
-				</li>
-				<li><a href="#" class="active">Каталог товаров</a></li>
-				<li><a href="#">Услуги</a></li>
-				<li><a href="#">Оплата и доставка</a></li>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Работы</a></li>
-				<li><a href="#">Партнёры</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
+		<div class="off-canvas-wrapper">
+			<div class="off-canvas position-left mobile_canvas" id="offCanvas" data-off-canvas>
+				<ul class="mobile-ofc vertical menu">
+					<li><a href="#" class="waves_effect ">Личный кабинет</a></li>
+					<li><a href="#" class="waves_effect active">Доставка</a></li>
+					<li><a href="#" class="waves_effect">Оплата</a></li>
+					<li><a href="#" class="waves_effect">Акции</a></li>
+					<li>
+						<a href="#" class="canvas_phone_inner">
+							<span class="canvas_phone">700-800, 25-08-08</span>
+							<span class="canvas_phone_bottom">Доставка по центру 60 минут</span>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<script src="vendor/foundation/js/vendor/jquery.js"></script>
 		<script src="vendor/foundation/js/vendor/what-input.js"></script>
@@ -138,6 +240,15 @@
 		<script src="vendor/jquery.maskedinput.js"></script>
 		<script type="text/javascript" src="vendor/waves/dist/waves.min.js"></script>
 		<script type="text/javascript">
+		$(".buy").click(function () {
+		  $(".notify").toggleClass("active");
+		  $("#notifyType").toggleClass("success");
+
+		  setTimeout(function(){
+		    $(".notify").removeClass("active");
+		    $("#notifyType").removeClass("success");
+		  },2000);
+		});
 		Waves.attach('.waves_effect');
 		Waves.init();
 		$('img[src$=".svg"]').each(function() {
@@ -166,41 +277,34 @@
 			slidesToScroll: 1,
 			centerMode: false,
 			focusOnSelect: true,
-			arrows: false,
-			dots: true,
-			responsive: [
-		    {
-		      breakpoint: 568,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1,
-				dots: false,
-				arrows: true,
-				prevArrow: $('.arrow_left'),
-				nextArrow: $('.arrow_right'),
-		      }
-		    }
-		  ]
+			arrows: true,
+			dots: false,
+			prevArrow: $('.arrow_left'),
+			nextArrow: $('.arrow_right')
 	  	});
 		$('.menu_slide').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			centerMode: true,
+			centerMode: false,
 			focusOnSelect: true,
 			arrows: false,
 			dots: true,
-			responsive: [
-		    {
-		      breakpoint: 568,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1,
-				dots: false,
-				arrows: true,
-		      }
-		    }
-		  ]
+			adaptiveHeight: true,
+			customPaging: function(slick, index) {
+				var image = $(slick.$slides[index]).find('.menu_content').attr('title');
+				return '<button class="tab waves-effect">' + image + '</button>'
+		    },
 	  	});
+
+		$(window).scroll(function(){
+			var sticky = $('.slick-dots'),
+				scroll = $(window).scrollTop();
+
+			if (scroll >= 180) sticky.addClass('fixed');
+			else sticky.removeClass('fixed');
+		});
+
+		$(".slick-dots").append("<li id='magic-line'></li>");
 		</script>
 	</div>
 </body>

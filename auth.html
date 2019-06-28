@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="ru" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<title>Трапеза | Авторизация</title>
+	<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
+	<link rel="stylesheet" href="vendor/foundation/css/app.css">
+	<link rel="stylesheet" href="vendor/waves/dist/waves.min.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<form class="auth_wrap" action="index.html" method="post">
+			<h1>Авторизация</h1>
+			<span class="auth_top">Введите номер телефона и мы отправим код для авторизации</span>
+			<input class="auth_phone" type="text" name="phone" value="" placeholder="+7">
+			<input class="auth_submit" type="submit" name="" value="Выслать код">
+			<span class="auth_bottom">Продолжая вы соглашаетесь с условиями	<a href="#">пользовательского соглашения</a></span>
+		</form>
+	</div>
+	<script src="vendor/foundation/js/vendor/jquery.js"></script>
+	<script src="vendor/foundation/js/vendor/what-input.js"></script>
+	<script src="vendor/foundation/js/vendor/foundation.js"></script>
+	<script src="vendor/foundation/js/app.js"></script>
+	<script src="vendor/jquery.maskedinput.js"></script>
+	<script type="text/javascript" src="vendor/waves/dist/waves.min.js"></script>
+	<script type="text/javascript">
+		Waves.attach('.waves_effect');
+		Waves.init();
+		jQuery(function($){
+		   $(".auth_phone").mask("+7 (999) 999-9999",{placeholder:"_"});
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html class="no-js" lang="ru" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<title>Трапеза</title>
+	<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
+	<link rel="stylesheet" href="vendor/foundation/css/app.css">
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+	<link rel="stylesheet" href="vendor/waves/dist/waves.min.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header_wrap">
+			<div class="header_burger">
+				<a href="#" class="waves_effect" data-toggle="offCanvas"><img src="img/burger.svg" alt=""></a>
+			</div>
+			<div class="header_title">
+				<h1>Трапеза Пицца</h1>
+			</div>
+			<div class="header_cart">
+				<a href="#" class="waves_effect">
+					<div class="cart_img">
+						<img src="img/cart.svg" alt="">
+					</div>
+					<span>2</span>
+				</a>
+			</div>
+			<div class="notify"><span id="notifyType" class=""></span></div>
+		</div>
+		<div class="slide_wrape">
+			<a href="#" class="slide_arrow arrow_left"><img src="img/left_arrow.svg" alt=""></a>
+			<div class="slider_content">
+				<div class="slide_block">
+					<img src="img/slide.jpg" alt="">
+				</div>
+				<div class="slide_block">
+					<img src="img/slide.jpg" alt="">
+				</div>
+				<div class="slide_block">
+					<img src="img/slide.jpg" alt="">
+				</div>
+			</div>
+			<a href="#" class="slide_arrow arrow_right"><img src="img/right_arrow.svg" alt=""></a>
+		</div>
+
+		<div class="tovar_wrap">
+			<div class="single_top">
+				<h2>Неополитанская</h2>
+				<!-- <span class="single_meta">30 см, вес 540 гр.</span> -->
+				<span class="single_desc">Салями, томаты, грибное ассорти, томатный соус, сыр моцарелла, оливки</span>
+			</div>
+			<div class="single_center">
+				<div class="product_weight">
+					<input type="radio" checked id="testo_check_1" name="testo" value="testo_1">
+					<label class="testo_check_1 waves_effect" for="testo_check_1">Тонкое тесто</label>
+					<input type="radio" id="testo_check_2" name="testo" value="testo_2">
+					<label class="testo_check_2 waves_effect" for="testo_check_2">Толстое тесто</label>
+				</div>
+				<div class="product_size">
+					<input type="radio" checked id="size_check_1" name="size" value="size_1">
+					<label class="size_check_1 waves_effect" for="size_check_1">25 см.</label>
+					<input disabled type="radio" id="size_check_2" name="size" value="size_2">
+					<label for="size_check_2">30 см.</label>
+					<input type="radio" id="size_check_3" name="size" value="size_2">
+					<label class="size_check_3 waves_effect" for="size_check_3">35 см.</label>
+				</div>
+			</div>
+		</div>
+		<div class="single_bottom">
+			<div class="input-group plus-minus-input">
+				<div class="input-group-button">
+					<button type="button" class="minus disabled waves_effect" data-quantity="minus" data-field="quantity">
+						<img src="img/minus.svg" alt="">
+					</button>
+				</div>
+				<input class="input-group-field" type="number" name="quantity" min="0" value="1">
+				<div class="input-group-button">
+					<button type="button" class="plus waves_effect" data-quantity="plus" data-field="quantity">
+						<img src="img/plus.svg" alt="">
+					</button>
+				</div>
+			</div>
+			<div class="single_total">
+				<span class="single_total_number">500</span>
+				<span class="single_total_symbol">P</span>
+			</div>
+			<div class="single_button">
+				<button type="submit" class="waves_effect">В корзину</button>
+			</div>
+		</div>
+		<div class="off-canvas-wrapper">
+			<div class="off-canvas position-left mobile_canvas" id="offCanvas" data-off-canvas>
+				<ul class="mobile-ofc vertical menu">
+					<li><a href="#" class="waves_effect ">Личный кабинет</a></li>
+					<li><a href="#" class="waves_effect active">Доставка</a></li>
+					<li><a href="#" class="waves_effect">Оплата</a></li>
+					<li><a href="#" class="waves_effect">Акции</a></li>
+					<li>
+						<a href="#" class="canvas_phone_inner">
+							<span class="canvas_phone">700-800, 25-08-08</span>
+							<span class="canvas_phone_bottom">Доставка по центру 60 минут</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="vendor/foundation/js/vendor/jquery.js"></script>
+		<script src="vendor/foundation/js/vendor/what-input.js"></script>
+		<script src="vendor/foundation/js/vendor/foundation.js"></script>
+		<script src="vendor/foundation/js/app.js"></script>
+		<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+		<script src="vendor/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="vendor/waves/dist/waves.min.js"></script>
+		<script type="text/javascript">
+		$(".buy").click(function () {
+		  $(".notify").toggleClass("active");
+		  $("#notifyType").toggleClass("success");
+
+		  setTimeout(function(){
+		    $(".notify").removeClass("active");
+		    $("#notifyType").removeClass("success");
+		  },2000);
+		});
+		Waves.attach('.waves_effect');
+		Waves.init();
+		$('img[src$=".svg"]').each(function() {
+		    var $img = jQuery(this);
+		    var imgURL = $img.attr('src');
+		    var attributes = $img.prop("attributes");
+
+		    $.get(imgURL, function(data) {
+		      // Get the SVG tag, ignore the rest
+		      var $svg = jQuery(data).find('svg');
+
+		      // Remove any invalid XML tags
+		      $svg = $svg.removeAttr('xmlns:a');
+
+		      // Loop through IMG attributes and apply on SVG
+		      $.each(attributes, function() {
+		        $svg.attr(this.name, this.value);
+		      });
+
+		      // Replace IMG with SVG
+		      $img.replaceWith($svg);
+		    }, 'xml');
+		  });
+		$('.slider_content').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			centerMode: false,
+			focusOnSelect: true,
+			arrows: true,
+			dots: false,
+			prevArrow: $('.arrow_left'),
+			nextArrow: $('.arrow_right')
+	  	});
+		jQuery(document).ready(function(){
+		    // This button will increment the value
+		    $('[data-quantity="plus"]').click(function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        fieldName = $(this).attr('data-field');
+		        // Get its current value
+		        var currentVal = parseInt($('input[name='+fieldName+']').val());
+		        // If is not undefined
+		        if (!isNaN(currentVal)) {
+		            // Increment
+		            $('input[name='+fieldName+']').val(currentVal + 1);
+		        } else {
+		            // Otherwise put a 0 there
+		            $('input[name='+fieldName+']').val(1);
+		        }
+		        if (currentVal == 1) {
+		            // Decrement one
+					$(".minus").removeClass("disabled");
+		        }
+		    });
+		    // This button will decrement the value till 0
+		    $('[data-quantity="minus"]').click(function(e) {
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        fieldName = $(this).attr('data-field');
+		        // Get its current value
+		        var currentVal = parseInt($('input[name='+fieldName+']').val());
+
+
+		        if (currentVal == 2) {
+					$(".minus").addClass("disabled");
+		        }
+		        // If it isn't undefined or its greater than 0
+		        if (!isNaN(currentVal) && currentVal > 1) {
+		            // Decrement one
+		            $('input[name='+fieldName+']').val(currentVal - 1);
+					$(".minus").attr("disabled");
+		        } else {
+		            // Otherwise put a 0 there
+		            $('input[name='+fieldName+']').val(1);
+		        }
+		    });
+		});
+
+
+		$(window).scroll(function(){
+			var sticky = $('.slick-dots'),
+				scroll = $(window).scrollTop();
+
+			if (scroll >= 180) sticky.addClass('fixed');
+			else sticky.removeClass('fixed');
+		});
+
+		$(".slick-dots").append("<li id='magic-line'></li>");
+		</script>
+	</div>
+</body>
+
+</html>
