@@ -1,0 +1,391 @@
+<!doctype html>
+<html class="no-js" lang="ru" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<title>Трапеза - Корзина</title>
+	<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
+	<link rel="stylesheet" href="vendor/foundation/css/app.css">
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+	<link rel="stylesheet" href="vendor/waves/dist/waves.min.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header_wrap">
+			<div class="header_burger">
+				<a href="#" class="waves_effect" data-toggle="offCanvas"><img src="img/burger.svg" alt=""></a>
+			</div>
+			<div class="header_title">
+				<a href="#">Назад</a>
+			</div>
+			<div class="header_cart">
+				<a href="#" class="waves_effect">
+					<div class="cart_img">
+						<img src="img/cart.svg" alt="">
+					</div>
+					<span>2</span>
+				</a>
+			</div>
+			<div class="notify"><span id="notifyType" class=""></span></div>
+		</div>
+
+		<div class="cart_wrap">
+			<div class="cart_inner">
+				<div class="cart_block">
+					<div class="cart_img">
+						<img src="img/product1.png" alt="">
+					</div>
+					<div class="cart_desc">
+						<h2>Неополитанская</h2>
+						<span class="cart_meta">Тонкое тесто, средняя</span>
+						<div class="cart_count">
+							<div class="input-group plus-minus-input">
+								<div class="input-group-button">
+									<button type="button" class="minus disabled waves_effect" data-quantity="minus" data-field="quantity">
+										<div class="minus_ico"></div>
+									</button>
+								</div>
+								<input class="input-group-field" type="number" name="quantity" min="0" value="0">
+								<div class="input-group-button">
+									<button type="button" class="plus waves_effect" data-quantity="plus" data-field="quantity">
+										<div class="plus_ico"></div>
+									</button>
+								</div>
+							</div>
+							<div class="cart_sum">
+								<span class="cart_total_number">500</span>
+								<span class="cart_total_symbol">P</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart_block">
+					<div class="cart_img">
+						<img src="img/product1.png" alt="">
+					</div>
+					<div class="cart_desc">
+						<h2>Неополитанская</h2>
+						<span class="cart_meta">Тонкое тесто, средняя</span>
+						<div class="cart_count">
+							<div class="input-group plus-minus-input">
+								<div class="input-group-button">
+									<button type="button" class="minus disabled waves_effect" data-quantity="minus" data-field="quantity">
+										<div class="minus_ico"></div>
+									</button>
+								</div>
+								<input class="input-group-field" type="number" name="quantity" min="0" value="0">
+								<div class="input-group-button">
+									<button type="button" class="plus waves_effect" data-quantity="plus" data-field="quantity">
+										<div class="plus_ico"></div>
+									</button>
+								</div>
+							</div>
+							<div class="cart_sum">
+								<span class="cart_total_number">500</span>
+								<span class="cart_total_symbol">P</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart_block">
+					<div class="cart_img">
+						<img src="img/product1.png" alt="">
+					</div>
+					<div class="cart_desc">
+						<h2>Неополитанская</h2>
+						<span class="cart_meta">Тонкое тесто, средняя</span>
+						<div class="cart_count">
+							<div class="input-group plus-minus-input">
+								<div class="input-group-button">
+									<button type="button" class="minus disabled waves_effect" data-quantity="minus" data-field="quantity">
+										<div class="minus_ico"></div>
+									</button>
+								</div>
+								<input class="input-group-field" type="number" name="quantity" min="0" value="0">
+								<div class="input-group-button">
+									<button type="button" class="plus waves_effect" data-quantity="plus" data-field="quantity">
+										<div class="plus_ico"></div>
+									</button>
+								</div>
+							</div>
+							<div class="cart_sum">
+								<span class="cart_total_number">500</span>
+								<span class="cart_total_symbol">P</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart_napitki">
+				<h3>Возьмите к заказу напитки</h3>
+				<div class="napitki_inner">
+					<div class="napitki_item item">
+						<div class="cart_img">
+							<img src="img/product5.png" alt="">
+						</div>
+						<div class="cart_desc">
+							<h2>Кока-кола Зеро</h2>
+							<div class="cart_count">
+								<div class="input-group plus-minus-input">
+									<div class="input-group-button">
+										<button type="button" class="minus disabled waves_effect" data-quantity="minus" data-field="quantity3">
+											<div class="minus_ico"></div>
+										</button>
+									</div>
+									<input class="input-group-field" type="number" name="quantity3" min="0" value="0">
+									<div class="input-group-button">
+										<button type="button" class="plus waves_effect" data-quantity="plus" data-field="quantity3">
+											<div class="plus_ico"></div>
+										</button>
+									</div>
+								</div>
+								<div class="cart_sum">
+									<span class="cart_total_number">65</span>
+									<span class="cart_total_symbol">P</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="napitki_item item">
+						<div class="cart_img">
+							<img src="img/product5.png" alt="">
+						</div>
+						<div class="cart_desc">
+							<h2>Кока-кола Зеро</h2>
+							<div class="cart_count">
+								<div class="input-group plus-minus-input">
+									<div class="input-group-button">
+										<button type="button" class="minus disabled waves_effect" data-quantity="minus" data-field="quantity3">
+											<div class="minus_ico"></div>
+										</button>
+									</div>
+									<input class="input-group-field" type="number" name="quantity3" min="0" value="0">
+									<div class="input-group-button">
+										<button type="button" class="plus waves_effect" data-quantity="plus" data-field="quantity3">
+											<div class="plus_ico"></div>
+										</button>
+									</div>
+								</div>
+								<div class="cart_sum">
+									<span class="cart_total_number">65</span>
+									<span class="cart_total_symbol">P</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="napitki_item item">
+						<div class="cart_img">
+							<img src="img/product5.png" alt="">
+						</div>
+						<div class="cart_desc">
+							<h2>Кока-кола Зеро</h2>
+							<div class="cart_count">
+								<div class="input-group plus-minus-input">
+									<div class="input-group-button">
+										<button type="button" class="minus disabled waves_effect" data-quantity="minus" data-field="quantity3">
+											<div class="minus_ico"></div>
+										</button>
+									</div>
+									<input class="input-group-field" type="number" name="quantity3" min="0" value="0">
+									<div class="input-group-button">
+										<button type="button" class="plus waves_effect" data-quantity="plus" data-field="quantity3">
+											<div class="plus_ico"></div>
+										</button>
+									</div>
+								</div>
+								<div class="cart_sum">
+									<span class="cart_total_number">65</span>
+									<span class="cart_total_symbol">P</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="cart_button">
+				<button type="submit" class="waves_effect">
+					<span>Оформить заказ на</span>
+					<span class="cart_total_number">500</span>
+					<span class="cart_total_symbol">P</span>
+				</button>
+			</div>
+		</footer>
+		<div class="off-canvas-wrapper">
+			<div class="off-canvas position-left mobile_canvas" id="offCanvas" data-off-canvas>
+				<ul class="mobile-ofc vertical menu">
+					<li><a href="#" class="waves_effect ">Личный кабинет</a></li>
+					<li><a href="#" class="waves_effect active">Доставка</a></li>
+					<li><a href="#" class="waves_effect">Оплата</a></li>
+					<li><a href="#" class="waves_effect">Акции</a></li>
+					<li>
+						<a href="#" class="canvas_phone_inner">
+							<span class="canvas_phone">700-800, 25-08-08</span>
+							<span class="canvas_phone_bottom">Доставка по центру 60 минут</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="vendor/foundation/js/vendor/jquery.js"></script>
+		<script src="vendor/foundation/js/vendor/what-input.js"></script>
+		<script src="vendor/foundation/js/vendor/foundation.js"></script>
+		<script src="vendor/foundation/js/app.js"></script>
+		<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+		<script src="vendor/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="vendor/waves/dist/waves.min.js"></script>
+		<script type="text/javascript">
+		// This button will increment the value
+	jQuery(document).ready(function(){
+   $('[data-quantity="plus"]').on("click",function(e){
+	   // Stop acting like a button
+	   e.preventDefault();
+	   // Get the field name
+	   fieldName = $(this).attr('data-field');
+	   // Get its current value
+	   var currentVal = parseInt($('input[name='+fieldName+']').val());
+	   // If is not undefined
+	   if (!isNaN(currentVal)) {
+		   // Increment
+		   $('input[name='+fieldName+']').val(currentVal + 1);
+	   } else {
+		   // Otherwise put a 0 there
+		   $('input[name='+fieldName+']').val(0);
+	   }
+	   if (currentVal == 0) {
+		   $(this).parents(".plus-minus-input").find(".minus").removeClass("disabled");
+	   }
+   });
+   // This button will decrement the value till 0
+   $('[data-quantity="minus"]').click(function(e) {
+	   // Stop acting like a button
+	   e.preventDefault();
+	   // Get the field name
+	   fieldName = $(this).attr('data-field');
+	   // Get its current value
+	   var currentVal = parseInt($('input[name='+fieldName+']').val());
+
+
+	   if (currentVal == 1) {
+		   $(".minus").addClass("disabled");
+	   }
+	   // If it isn't undefined or its greater than 0
+	   if (!isNaN(currentVal) && currentVal > 1) {
+		   // Decrement one
+		   $('input[name='+fieldName+']').val(currentVal - 1);
+	   } else {
+		   // Otherwise put a 0 there
+		   $('input[name='+fieldName+']').val(0);
+	   }
+   });
+   });
+		$(".buy").click(function () {
+		  $(".notify").toggleClass("active");
+		  $("#notifyType").toggleClass("success");
+
+		  setTimeout(function(){
+		    $(".notify").removeClass("active");
+		    $("#notifyType").removeClass("success");
+		  },2000);
+		});
+		Waves.attach('.waves_effect');
+		Waves.init();
+		$('img[src$=".svg"]').each(function() {
+		    var $img = jQuery(this);
+		    var imgURL = $img.attr('src');
+		    var attributes = $img.prop("attributes");
+
+		    $.get(imgURL, function(data) {
+		      // Get the SVG tag, ignore the rest
+		      var $svg = jQuery(data).find('svg');
+
+		      // Remove any invalid XML tags
+		      $svg = $svg.removeAttr('xmlns:a');
+
+		      // Loop through IMG attributes and apply on SVG
+		      $.each(attributes, function() {
+		        $svg.attr(this.name, this.value);
+		      });
+
+		      // Replace IMG with SVG
+		      $img.replaceWith($svg);
+		    }, 'xml');
+		  });
+		$('.napitki_inner').slick({
+  			slidesToShow: 1,
+  			slidesToScroll: 1,
+  			centerMode: false,
+  			focusOnSelect: true,
+  			arrows: false,
+  			dots: false,
+			responsive: [
+			    {
+			      breakpoint: 1624,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 3,
+			        infinite: true,
+			        dots: true
+			      }
+			    },
+			    {
+			      breakpoint: 1024,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 2
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1
+			      }
+			    }
+			    // You can unslick at a given breakpoint now by adding:
+			    // settings: "unslick"
+			    // instead of a settings object
+			  ]
+  	  	});
+		$('.slider_content').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			centerMode: false,
+			focusOnSelect: true,
+			arrows: true,
+			dots: false,
+			prevArrow: $('.arrow_left'),
+			nextArrow: $('.arrow_right')
+	  	});
+		$('.menu_slide').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			centerMode: false,
+			focusOnSelect: true,
+			arrows: false,
+			dots: true,
+			adaptiveHeight: true,
+			customPaging: function(slick, index) {
+				var image = $(slick.$slides[index]).find('.menu_content').attr('title');
+				return '<button class="tab waves-effect">' + image + '</button>'
+		    },
+	  	});
+
+		$(window).scroll(function(){
+			var sticky = $('.slick-dots'),
+				scroll = $(window).scrollTop();
+
+			if (scroll >= 180) sticky.addClass('fixed');
+			else sticky.removeClass('fixed');
+		});
+
+		$(".slick-dots").append("<li id='magic-line'></li>");
+		</script>
+	</div>
+</body>
+
+</html>

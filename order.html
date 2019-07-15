@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="no-js" lang="ru" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<title>Трапеза</title>
+	<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
+	<link rel="stylesheet" href="vendor/foundation/css/app.css">
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+	<link rel="stylesheet" href="vendor/waves/dist/waves.min.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header_wrap">
+			<div class="header_burger">
+				<a href="#" class="waves_effect" data-toggle="offCanvas"><img src="img/burger.svg" alt=""></a>
+			</div>
+			<div class="header_title">
+				<h1>Трапеза Пицца</h1>
+			</div>
+			<div class="header_cart">
+				<a href="#" class="waves_effect">
+					<div class="cart_img">
+						<img src="img/cart.svg" alt="">
+					</div>
+					<span>2</span>
+				</a>
+			</div>
+			<div class="notify"><span id="notifyType" class=""></span></div>
+		</div>
+		<form class="account_registr" class="" action="index.html" method="post">
+		<section id="registr">
+			<div class="registr_inner">
+				<ul class="tabs" data-tabs id="product-tabs">
+					<li class="tabs-title check_1 is-active"><a data-tabs-target="panel2" href="#panel2" class="waves_effect">Курьером</a></li>
+					<li class="tabs-title check_2"><a data-tabs-target="panel3" href="#panel3" class="waves_effect">Самовывоз</a></li>
+				</ul>
+				<div class="tabs-content" data-tabs-content="product-tabs">
+					<div class="tabs-panel is-active" id="panel2">
+						<span class="registr_title">Адреса доставки</span>
+						<ul class="registr_adress">
+							<li>
+								<input type="radio" id="registr-1" name="registr" value="ул. Свердлова, д. 16/2, под. 1, эт. 9, кв. 34" checked>
+								<label class="registr-1" for="registr-1">ул. Свердлова, д. 16/2, под. 1, эт. 9, кв. 34</label>
+								<div class="check"></div>
+							</li>
+							<li>
+								<input type="radio" id="registr-2" name="registr" value="ул. Халтурина, д. 51">
+								<label class="registr-2" for="registr-2">ул. Халтурина, д. 51</label>
+								<div class="check"></div>
+							</li>
+							<li>
+								<input class="disable" type="radio" id="registr-3" name="registr" value="Указать другой адрес">
+								<label class="registr-3" for="registr-3">Указать другой адрес</label>
+								<div class="check"></div>
+							</li>
+						</ul>
+						<div class="registr_hidden hidden">
+							<input type="text" class="registr_input" name="street" placeholder="Улица" required="" value="">
+							<input type="text" class="registr_input registr_column_1" name="dom" placeholder="Дом" required="" value="">
+							<input type="text" class="registr_input registr_column_2" name="kvartira" placeholder="Квартира" required="" value="">
+							<input type="text" class="registr_input registr_column_3" name="podezd" placeholder="Подъезд" required="" value="">
+							<input type="text" class="registr_input registr_column_4" name="etaj" placeholder="Этаж" required="" value="">
+
+							<textarea type="textarea" rows="3" class="registr_input registr_textarea" name="comment" placeholder="Комментарий" required="" value=""></textarea>
+						</div>
+					</div>
+					<div class="tabs-panel" id="panel3">
+						<p>Адрес: Якутск, Орджоникидзе, 5</p>
+					</div>
+				</div>
+				<input type="text" class="registr_input" name="name" placeholder="Имя" required="" value="">
+				<input type="tel" class="registr_input input-phone" name="phone" placeholder="Номер телефона" required="" value="">
+				<span class="registr_title">Оплата</span>
+				<div class="registr_pay">
+					<ul>
+						<li>
+							<input type="radio" id="registr_3" checked name="registr1" value="Наличными">
+							<label class="registr_3 waves_effect" for="registr_3"><b>Наличными при получении</b><br>Оплата наличными курьеру</label>
+						</li>
+						<li>
+							<input type="radio" id="registr_4" name="registr1" value="Банковская карта">
+							<label class="registr_4 waves_effect" for="registr_4"><b>Банковская карта</b><br>Оплата картой курьеру с помощью</label>
+						</li>
+					</ul>
+				</div>
+				<div class="total">
+					<span class="total_text">Итого</span>
+					<span class="total_price">1 490</span>
+					<span class="total_text">P</span>
+				</div>
+				<div class="sbor">
+					<input type="checkbox" id="sbor-3" checked name="sbor" value="Согласен">
+					<label class="sbor-3" for="sbor-3">Соглашаюсь со сбором и обработкой <a href="#">персональных данных</a></label>
+					<div class="check"></div>
+				</div>
+			</div>
+			<div class="account_button">
+				<button type="submit" class="waves_effect">
+					<span>Оформить заказа</span>
+				</button>
+			</div>
+		</section>
+	</form>
+		<div class="off-canvas-wrapper">
+			<div class="off-canvas position-left mobile_canvas" id="offCanvas" data-off-canvas>
+				<ul class="mobile-ofc vertical menu">
+					<li><a href="#" class="waves_effect ">Личный кабинет</a></li>
+					<li><a href="#" class="waves_effect active">Доставка</a></li>
+					<li><a href="#" class="waves_effect">Оплата</a></li>
+					<li><a href="#" class="waves_effect">Акции</a></li>
+					<li>
+						<a href="#" class="canvas_phone_inner">
+							<span class="canvas_phone">700-800, 25-08-08</span>
+							<span class="canvas_phone_bottom">Доставка по центру 60 минут</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="vendor/foundation/js/vendor/jquery.js"></script>
+		<script src="vendor/foundation/js/vendor/what-input.js"></script>
+		<script src="vendor/foundation/js/vendor/foundation.js"></script>
+		<script src="vendor/foundation/js/app.js"></script>
+		<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+		<script src="vendor/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="vendor/waves/dist/waves.min.js"></script>
+		<script type="text/javascript">
+		Waves.attach('.waves_effect');
+		Waves.init();
+		$('img[src$=".svg"]').each(function() {
+		    var $img = jQuery(this);
+		    var imgURL = $img.attr('src');
+		    var attributes = $img.prop("attributes");
+
+		    $.get(imgURL, function(data) {
+		      // Get the SVG tag, ignore the rest
+		      var $svg = jQuery(data).find('svg');
+
+		      // Remove any invalid XML tags
+		      $svg = $svg.removeAttr('xmlns:a');
+
+		      // Loop through IMG attributes and apply on SVG
+		      $.each(attributes, function() {
+		        $svg.attr(this.name, this.value);
+		      });
+
+		      // Replace IMG with SVG
+		      $img.replaceWith($svg);
+		    }, 'xml');
+		  });
+		  jQuery(document).ready(function(){
+  	// phone mask
+	jQuery(function($){
+  	 $(".input-phone").mask("+7 (999) 999-9999",{placeholder:"_"});
+    });
+  });
+  $('.registr_adress li input#registr-3').click(function(){
+       $('.registr_hidden').removeClass('hidden');
+  });
+  $('.registr_adress li input#registr-1,.registr_adress li input#registr-2').click(function(){
+       $('.registr_hidden').addClass('hidden');
+  });
+
+		</script>
+	</div>
+</body>
+
+</html>
