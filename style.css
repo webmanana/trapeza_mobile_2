@@ -237,6 +237,20 @@ a {
 }
 .menu_img {
 	width: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.menu_img img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+.preloader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 120px;
 }
 /* off-canvas */
 .mobile_canvas {
