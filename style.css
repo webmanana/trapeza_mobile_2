@@ -1,14 +1,16 @@
-@font-face{
+@font-face {
 	font-family: 'Gilroy';
-	src: url('./fonts/Gilroy-Regular.ttf');
+	font-display: auto;
 	font-weight: normal;
 	font-style: normal;
+	src: local('Gilroy'), url(./fonts/Gilroy-Regular.ttf) format('ttf');
 }
-@font-face{
+@font-face {
 	font-family: 'Gilroy';
-	src: url('./fonts/Gilroy-Bold.ttf');
+	font-display: auto;
 	font-weight: bold;
 	font-style: normal;
+	src: local('Gilroy'), url(./fonts/Gilroy-Bold.ttf) format('ttf');
 }
 * {
 	box-sizing: border-box;
@@ -256,7 +258,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 120px;
+	height: 132px;
 }
 /* off-canvas */
 .mobile_canvas {
