@@ -168,26 +168,26 @@ a {
 	position: relative;
 }
 .slick-dots li:nth-child(1).slick-active ~ #magic-line {
-    left: 5%;
+    left: 17px;
 }
 .slick-dots li:nth-child(2).slick-active ~ #magic-line {
-    left: 25%;
+    left: 81px;
 }
 .slick-dots li:nth-child(3).slick-active ~ #magic-line {
-    left: 45%;
+    left: 144px;
 }
 .slick-dots li:nth-child(4).slick-active ~ #magic-line {
-    left: 66%;
+    left: 211px;
 }
 .slick-dots li:nth-child(5).slick-active ~ #magic-line {
-    left: 89%;
+    left: 286px;
 }
 .slick-dots #magic-line {
     display: block;
     position: absolute;
     top: 45px;
     left: 0;
-    width: 18%;
+    width: 60px;
     height: 3px;
     background: #E9B226;
     transition: all ease-in-out 0.3s;
